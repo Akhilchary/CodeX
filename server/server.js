@@ -9,7 +9,7 @@ const PORT=3000;
 
 // middleware
 app.use(cors());
-app.use("/api/",codeRoutes);
+app.use("/api/",codeRoutes)
 //    --global error handler
 app.use((err,req,res,next)=>{
     res.status(err.status),
